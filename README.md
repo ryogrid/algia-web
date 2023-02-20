@@ -17,8 +17,8 @@ r
   - Mostly the machine must have global IP address
 
 ## Needed steps to use algia-web client
-- Setup of algia and executing server program of algia-web at the machine
+- Setup of algia and executing server program of algia-web at your machine mentioned above
   - Includes making 8080 port (default) accecible from The internet
 
 ## Usage
-- Please read algia-serv.py and modify it if needed!
+- Please read [algia-serv.py](https://github.com/ryogrid/algia-web/blob/main/algia-serv.py) and modify it if you need!
