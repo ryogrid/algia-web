@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>algia-web TL</title>
   <style type="text/css">
     .twitter__container {
@@ -30,21 +31,61 @@
     .text-pad {
       padding-left:50px;
     }
+    .post-form {
+      position: fixed;
+      bottom: 5vw;
+    }
+    .centering {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70vw;
+    }
+    .form-size {
+      width: 60vw;
+      height: 20vw;
+    }
+    .submit-btn{
+      width: 10vw;
+      height: 20vw;
+      font-size: 200%;
+    }
   </style>
+  <script>
+    document.post-form.btn.addEventListener('click', function() {
+      const xhr = new XMLHttpRequest();
+      xhr.open('post', 'sub');
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      //xhr.setRequestHeader('content-type','application/json')
+
+      const note = document.querySelector('input[name=note]');
+      //var post_data = encodeURIComponent(post_text.value)
+      //var post_data = post_text.value
+      fd.append('note', note.value);
+      xhr.send(fd);
+      //xhr.send("{note:" + note + "}");
+    });
+    </script>  
 </head>
 <body>
+  <div class="centering">
+    <form mathod="post" action="sub" name="post-form" class="post-form">
+      <input id="note" name="note" type="text" class="form-size"/>
+      <button name="btn" class="submit-btn">post</button>
+    </form>
+  </div>
   <div class="twitter__container">
     {%- for ii in range( lines|length) %}
     {% if lines[ii][0] == True %}
     <hr>
     <span class="red">
-      <bold>{{lines[ii][1].split(":")[0]}}</bold>
+      <bold>{{lines[ii][1]}}</bold>
     </span>
-    <span class="blue">
+<!--  <span class="blue">
       <bold>{{lines[ii][1].split(":")[1]}}</bold>
     </span>
+-->    
     {% else %}
-    <p class="test-pad">{{lines[ii][1]}}</p>
+    <p class="text-pad">{{lines[ii][1]}}</p>
     {% endif %}
     {%- endfor %}
   </div>
