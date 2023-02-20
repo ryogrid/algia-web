@@ -7,7 +7,7 @@ algia cli command backed server-side nostr web client
 - Handling of Nostr protcol is done by your machine running server program of algia-web
   - algia is simple Nostr client which can run on CLI environmet
   - At a point of view, algia-web is a kind of wrapper client of the client running on the machine (=algia)
-- Your web browser only renders contens received from the server
+- Your web browser only renders contents received from the server
 - This architecture can save communiaction amount and buttery consumption of your smartphone and other mobile devices you use Nostr with Web browser at
 - does not offers rich UI/UX and support many features as Nostr client
 - is developed in assumption that it is not used as nmain client and is used when you do not have power supply or connect to The internet via mobile network which has restriction of total communication amount
