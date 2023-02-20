@@ -18,7 +18,7 @@ r
 
 ## Needed steps to use algia-web client
 - Setup of algia and executing server program of algia-web at the machine
-  - Includes Making 8080 port (default) accecible from The internet
+  - Includes making 8080 port (default) accecible from The internet
 
 ## Usage
-- Please read algia-serv.py!
+- Please read algia-serv.py and modify it if needed!
