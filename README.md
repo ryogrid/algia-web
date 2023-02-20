@@ -11,7 +11,7 @@ algia CLI command backed server-side nostr web client
 - This architecture can save communiaction amount and buttery consumption of your smartphone and other mobile devices you use Nostr with Web browser at
 - does not offers rich UI/UX and support many features as Nostr client
 - is developed in assumption that it is not used as main client and is used when you do not have power supply or connect to The internet via mobile network which has restriction of total communication amount
-r
+
 ## Requiements 
 - A machine which can be accessible from your device
   - Mostly the machine must have global IP address
