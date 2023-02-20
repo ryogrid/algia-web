@@ -4,31 +4,47 @@
   <title>algia-web TL</title>
   <style type="text/css">
     .twitter__container {
-      //padding: 0;
+      /* padding: 0; */
       background: #ffffff;
       overflow: hidden;
-      //overflow-wrap: normal;
+      /* overflow-wrap: normal; */
       max-width: 80%;
       margin: 20px auto;
-      //font-size: 80%;
-      //border: solid 1px #eeeeee;
-      //line-height: 1.0em;
-      word-wrap: break-word;
+      /* font-size: 80%;
+      border: solid 1px #eeeeee;
+      line-height: 1.0em;
+      word-wrap: break-word; */
+    }
+    hr {
+      border:none;
+      border-top:dashed 1px;
+      height:1px;
+      width:2000px;
+    }
+    .red {
+      color: #ff0000;
+    }
+    .blue {
+      color: #0000FF;
+    }
+    .text-pad {
+      padding-left:50px;
+    }
   </style>
 </head>
 <body>
   <div class="twitter__container">
     {%- for ii in range( lines|length) %}
     {% if lines[ii][0] == True %}
-    <hr style="border:none;border-top:dashed 1px;height:1px;width:2000px;">
-    <span style="color: #ff0000;">
+    <hr>
+    <span class="red">
       <bold>{{lines[ii][1].split(":")[0]}}</bold>
     </span>
-    <span style="color: #0000FF;">
+    <span class="blue">
       <bold>{{lines[ii][1].split(":")[1]}}</bold>
     </span>
     {% else %}
-    <p style="padding-left:50px;">{{lines[ii][1]}}</p>
+    <p class="test-pad">{{lines[ii][1]}}</p>
     {% endif %}
     {%- endfor %}
   </div>
