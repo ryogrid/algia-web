@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, Markup
+from flask import Flask, render_template, request, Markup, redirect, url_for
 import subprocess
 from subprocess import PIPE
 import re
@@ -53,7 +53,8 @@ def post():
     post_text = escape(post_text)
     #subprocess.run("algia n " + "'" + post_text + "'", shell=True, stdout=PIPE, stderr=PIPE, text=True, encoding="utf-8")
     subprocess.run(["algia","n", post_text], text=True, encoding="utf-8")
-    return index()
+    #return index()
+    redirect(url_for('index'))
 
 app.run(host='0.0.0.0', port=8080, debug=True)
 

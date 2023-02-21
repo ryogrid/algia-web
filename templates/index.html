@@ -53,11 +53,15 @@
   <script>
     document.post-form.btn.addEventListener('click', function() {
       const xhr = new XMLHttpRequest();
+      // const base_url = window.location.href;
       xhr.open('post', 'sub');
+      // xhr.onload = (e) => {
+      //   window.locationlocation = base_url;
+      // }
       xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
       //xhr.setRequestHeader('content-type','application/json')
 
-      const note = document.querySelector('input[name=note]');
+      const note = document.querySelector('textarea[name=note]');
       //var post_data = encodeURIComponent(post_text.value)
       //var post_data = post_text.value
       fd.append('note', note.value);
@@ -70,6 +74,7 @@
   <div class="centering">
     <form mathod="post" action="sub" name="post-form" class="post-form">
       <input id="note" name="note" type="text" class="form-size"/>
+      <!-- <textarea id="note" rows="10" name="note" type="text"/> -->
       <button name="btn" class="submit-btn">post</button>
     </form>
   </div>
