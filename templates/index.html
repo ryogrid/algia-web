@@ -75,17 +75,19 @@
   </div>
   <div class="twitter__container">
     {%- for ii in range( lines|length) %}
-    {% if lines[ii][0] == True %}
+    {% if lines[ii][0] == 1 %}
     <hr>
-    <span class="red">
+    <span class="red">      
       <bold>{{lines[ii][1]}}</bold>
     </span>
 <!--  <span class="blue">
       <bold>{{lines[ii][1].split(":")[1]}}</bold>
     </span>
 -->    
+    {% elif lines[ii][0] == 2 %}
+    <p class="text-pad">{{ lines[ii][1] }}</p>
     {% else %}
-    <p class="text-pad">{{lines[ii][1]}}</p>
+    <a href="{{lines[ii][2]}}"><p class="text-pad">{{ lines[ii][1] }}</p></a>
     {% endif %}
     {%- endfor %}
   </div>
