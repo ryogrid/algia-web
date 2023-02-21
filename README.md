@@ -1,5 +1,5 @@
 # algia-web
-algia CLI command backed server-side nostr rendering web client
+algia CLI command backed server-side rendering Nostr web client
 
 - [algia](https://github.com/mattn/algia) is a tool and very simple client for using micro blog application with Nostr protcol developped by [mattn](https://github.com/mattn)
 
