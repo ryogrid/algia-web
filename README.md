@@ -26,4 +26,4 @@ algia CLI command backed server-side rendering Nostr web client
 - Please read [algia-serv.py](https://github.com/ryogrid/algia-web/blob/main/algia-serv.py) and modify it if you need!
 
 ## Screen capture (on Smartphone)
-<img src="https://user-images.githubusercontent.com/24614/220373073-41f74529-309d-4d0a-b23a-9a3741480aac.png" width="411px" height="960px" border="5" >
+<img src="https://user-images.githubusercontent.com/24614/220607489-c1256934-1b7d-4a75-83b3-861b8d05be32.png"  width="411px" height="960px">
