@@ -21,8 +21,19 @@ algia CLI command backed server-side rendering Nostr web client
 ## Needed steps to use algia-web client
 - Setup of algia and executing server program of algia-web at your machine mentioned above
   - Includes making 8080 port (default) accecible from The internet
-
-## Usage
+- Procedure
+  1. Setup [algia](https://github.com/mattn/algia) for your Nostr account
+  1. Setup python environment
+  1. Setup algia-web server
+     1. $ git clone https://github.com/ryogrid/algia-web.git
+     1. $ cd algia-web
+     1. $ pip install -r requirements.txt
+     1. $ python algia-serv.py
+        - bind port is 8080 (default). if you want change port edit last line of algia-serv.py
+     1. Make the server program accecible from the Internet
+        - In many cases, you should configure firewall software on your machine (iptables, firewalld ... etc)
+  1. Access http://[global address of your server machine]:8080/
+## Usage detail
 - Please read [algia-serv.py](https://github.com/ryogrid/algia-web/blob/main/algia-serv.py) and modify it if you need!
 
 ## Screen capture (on Smartphone)
