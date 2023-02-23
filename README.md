@@ -34,7 +34,7 @@ algia CLI command backed server-side rendering Nostr web client
         - In many cases, you should configure firewall software on your machine (iptables, firewalld ... etc)
   1. Access http://[global address of your server machine]:8080/
 ## Usage detail
-- Please read [algia-serv.py](https://github.com/ryogrid/algia-web/blob/main/algia-serv.py) and modify it if you need!
+- Please read [algia-serv.py](https://github.com/ryogrid/algia-web/blob/main/algia-serv.py) and [index.html](https://github.com/ryogrid/algia-web/blob/main/templates/index.html). And Please modify these if you need!
 
 ## Screen capture (on Smartphone)
 <img src="https://user-images.githubusercontent.com/24614/220607489-c1256934-1b7d-4a75-83b3-861b8d05be32.png"  width="411px" height="960px">
