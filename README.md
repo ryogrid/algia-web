@@ -29,7 +29,7 @@ algia CLI command backed server-side rendering Nostr web client
      1. $ cd algia-web
      1. $ pip install -r requirements.txt
      1. $ python algia-serv.py
-        - bind port is 8080 (default). if you want change port edit last line of algia-serv.py
+        - bind port is 8080 (default). if you want change port, you should edit last line of algia-serv.py
      1. Make the server program accecible from the Internet
         - In many cases, you should configure firewall software on your machine (iptables, firewalld ... etc)
   1. Access http://[global address of your server machine]:8080/
