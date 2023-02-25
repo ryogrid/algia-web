@@ -1,9 +1,5 @@
-from flask import Flask, render_template, request, Markup, redirect, url_for
+from flask import Flask, request
 import subprocess
-from subprocess import PIPE
-import re
-from shlex import quote
-from markupsafe import escape
 
 app = Flask(__name__)
 
