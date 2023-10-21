@@ -46,7 +46,7 @@ def post():
         app.logger.debug(type(post_text))
         app.logger.debug(post_text)
     except Exception as e:
-        app.logger.debug("exeption!")
+        app.logger.debug("exception!")
         pass
 
     #post_text = quote(escape(post_text))
