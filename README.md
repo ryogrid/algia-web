@@ -1,4 +1,5 @@
 # algia-web
+
 algia CLI command backed server-side rendering Nostr web client
 
 - [algia](https://github.com/mattn/algia) is a tool and very simple client for using micro blog application with Nostr protocol developed by [mattn](https://github.com/mattn)
@@ -21,6 +22,7 @@ algia CLI command backed server-side rendering Nostr web client
   - Mostly the machine must have global IP address
 
 ## Needed steps to use algia-web client
+
 - Setup of algia and executing server program of algia-web at your machine mentioned above
   - Includes making 8080 port (default) accecible from The internet
 - Procedure
@@ -36,7 +38,9 @@ algia CLI command backed server-side rendering Nostr web client
         - In many cases, you should configure firewall software on your machine (iptables, firewalld ... etc)
   1. Access http://[global address of your server machine]:8080/
 ## Usage detail
+
 - Please read [algia-serv.py](https://github.com/ryogrid/algia-web/blob/main/algia-serv.py) and [index.html](https://github.com/ryogrid/algia-web/blob/main/templates/index.html). And Please modify these if you need!
 
 ## Screen capture (on Smartphone)
+
 <img src="https://user-images.githubusercontent.com/24614/220607489-c1256934-1b7d-4a75-83b3-861b8d05be32.png"  width="411px" height="960px">
