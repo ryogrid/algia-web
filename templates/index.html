@@ -14,7 +14,7 @@
       /* font-size: 80%;
       border: solid 1px #eeeeee;
       line-height: 1.0em; */
-      word-wrap: break-word; 
+      word-wrap: break-word;
     }
     hr {
       border:none;
@@ -43,7 +43,7 @@
     .fixing-bottom{
       position: fixed;
       bottom: 5vw;
-    }    
+    }
     .form-size {
       width: 50vw;
       height: 20vw;
@@ -57,29 +57,29 @@
       width: 8vw;
       height: 10vw;
       font-size: 150%;
-    }    
-  </style> 
+    }
+  </style>
 </head>
 <body>
   <button id="reload-btn" class="reload-btn fixing-top">reload page</button>
   <div class="centering">
-    <form mathod="post" action="sub" name="post-form" class="fixing-bottom">
+    <form method="post" action="sub" name="post-form" class="fixing-bottom">
       <input id="note" name="note" type="text" class="form-size"/>
       <!-- <textarea id="note" rows="10" name="note" type="text"/> -->
-      <button name="submit-btn" class="submit-btn">post</button>      
+      <button name="submit-btn" class="submit-btn">post</button>
     </form>
   </div>
   <div class="twitter__container">
     {%- for ii in range( lines|length) %}
     {% if lines[ii][0] == 1 %}
     <hr>
-    <span class="red">      
+    <span class="red">
       <bold>{{lines[ii][1]}}</bold>
     </span>
 <!--  <span class="blue">
       <bold>{{lines[ii][1].split(":")[1]}}</bold>
     </span>
--->    
+-->
     {% elif lines[ii][0] == 2 %}
     <p class="text-pad">{{ lines[ii][1] }}</p>
     {% else %}
@@ -104,6 +104,6 @@
       xhr.send(fd);
     });
 */
-    </script>   
+    </script>
 </body>
 </html>

@@ -29,10 +29,10 @@ def index():
                     #line_url_replaced = line_escaped.replace(found_url, "<a href=\"" + escape(found_url) + "\">" + escape(found_url) + "</a>")
                     lines_inner.append([3,line,escape(found_url)])
                     app.logger.debug(line)
-                
-        
+
+
         return render_template('index.html', lines=lines_inner)
-            
+
 
 @app.route('/sub', methods=['post','get'])
 def post():
@@ -46,7 +46,7 @@ def post():
         app.logger.debug(type(post_text))
         app.logger.debug(post_text)
     except Exception as e:
-        app.logger.debug("exeption!")
+        app.logger.debug("exception!")
         pass
 
     #post_text = quote(escape(post_text))
@@ -58,4 +58,4 @@ def post():
 
 app.run(host='0.0.0.0', port=8080, debug=True)
 
-    
+
